@@ -1,5 +1,5 @@
-import * as commandLineArgs from 'command-line-args';
-import * as commandLineUsage from 'command-line-usage';
+import commandLineArgs from 'command-line-args';
+import commandLineUsage from 'command-line-usage';
 import { ArgvTable, CommandLineDefinitions } from './command-line.interface';
 import { HELP_SECTIONS, PARSE_OPTIONS } from './command-line.config';
 import { red } from 'colors/safe';
@@ -34,7 +34,7 @@ export class CommandLine {
     process.argv = argv;
   }
 
-  private static validate(argv): void {
+  private static validate(argv): any {
     const UNKNOWN_COMMAND = argv['_unknown'];
     if (UNKNOWN_COMMAND) {
       const errorMessage = `${red('[ERROR]:')} UNKNOWN_COMMAND ${JSON.stringify(UNKNOWN_COMMAND)}`;

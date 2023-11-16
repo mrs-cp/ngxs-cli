@@ -35,8 +35,8 @@
   "sideEffects": true,
   "dependencies": {
     "colors": "1.4.0",
-    "command-line-args": "5.2.1",
-    "command-line-usage": "7.0.1",
+    "command-line-args": "^5.2.1",
+    "command-line-usage": "^7.0.1",
     "inquirer-directory": "2.2.0",
     "node-plop": "0.32.0",
     "plop": "4.0.0"
